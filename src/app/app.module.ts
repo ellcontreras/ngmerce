@@ -10,6 +10,7 @@ import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, Mat
 import { HomePageComponent } from './home-page/home-page.component';
 import { ProductCardComponent } from './product-card/product-card.component';
 import { CategoryPageComponent } from './category-page/category-page.component';
+import { NewProductComponent } from './new-product/new-product.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { CategoryPageComponent } from './category-page/category-page.component';
     NavbarComponentComponent,
     HomePageComponent,
     ProductCardComponent,
-    CategoryPageComponent
+    CategoryPageComponent,
+    NewProductComponent
   ],
   imports: [
     BrowserModule,
