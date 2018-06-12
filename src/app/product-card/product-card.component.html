@@ -1,3 +1,12 @@
-<p>
-  product-card works!
-</p>
+<mat-card class="card">
+  <mat-card-header>
+    <mat-card-title>
+      <h2>{{ title }}</h2>
+    </mat-card-title>
+  </mat-card-header>
+  <img mat-card-image src="{{ image }}" alt="{{ image }}">
+  <mat-card-content>
+    <p>{{ description.substring(0,20) + '...' }}</p>
+    <p><b>Precio: </b>${{ price }}</p>
+  </mat-card-content>
+</mat-card>
