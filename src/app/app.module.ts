@@ -9,13 +9,15 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatCardModule, MatGridListModule } from '@angular/material';
 import { HomePageComponent } from './home-page/home-page.component';
 import { ProductCardComponent } from './product-card/product-card.component';
+import { CategoryPageComponent } from './category-page/category-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponentComponent,
     HomePageComponent,
-    ProductCardComponent
+    ProductCardComponent,
+    CategoryPageComponent
   ],
   imports: [
     BrowserModule,
