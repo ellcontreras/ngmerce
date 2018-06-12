@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'app-category-page',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./category-page.component.css']
 })
 export class CategoryPageComponent implements OnInit {
-
-  constructor() { }
+  public category: String;
+  constructor(private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
-  }
+    this.activatedRoute.params.subscribe(params => {
+      this.category = params['categoryName'];
+      this.category = this.category.charAt(0).toUpperCase() + this.category.slice(1);
+    });
+    }
 
 }
