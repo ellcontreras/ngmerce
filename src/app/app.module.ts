@@ -6,7 +6,9 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponentComponent } from './navbar-component/navbar-component.component';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatCardModule, MatGridListModule } from '@angular/material';
+import { MatToolbarModule, MatButtonModule, MatSidenavModule,
+          MatIconModule, MatListModule, MatCardModule, MatGridListModule,
+          MatFormFieldModule, MatInputModule } from '@angular/material';
 import { HomePageComponent } from './home-page/home-page.component';
 import { ProductCardComponent } from './product-card/product-card.component';
 import { CategoryPageComponent } from './category-page/category-page.component';
@@ -32,7 +34,9 @@ import { NewProductComponent } from './new-product/new-product.component';
     MatIconModule,
     MatListModule,
     MatCardModule,
-    MatGridListModule
+    MatGridListModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

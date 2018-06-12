@@ -1,3 +1,24 @@
-<p>
-  new-product works!
-</p>
+<mat-grid-list cols="3">
+  <mat-grid-tile></mat-grid-tile>
+  <mat-grid-tile>
+    <mat-card>
+      <mat-card-content class="text-center">
+        <h1>Nuevo Producto</h1>
+        <mat-form-field>
+          <input matInput placeholder="Nombre del producto">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Precio del producto">
+        </mat-form-field>
+        <mat-form-field>
+          <textarea matInput placeholder="Descripción del producto"></textarea>
+        </mat-form-field>
+        <p>Sube una foto del producto:</p>
+        <input type="file">
+        <br><br>
+        <button mat-raised-button color="primary">Publicar</button>
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile></mat-grid-tile>
+</mat-grid-list>
