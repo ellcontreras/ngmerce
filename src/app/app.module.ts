@@ -8,12 +8,14 @@ import { NavbarComponentComponent } from './navbar-component/navbar-component.co
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
 import { HomePageComponent } from './home-page/home-page.component';
+import { ProductCardComponent } from './product-card/product-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponentComponent,
-    HomePageComponent
+    HomePageComponent,
+    ProductCardComponent
   ],
   imports: [
     BrowserModule,
