@@ -17,12 +17,12 @@ import {FormsModule} from '@angular/forms';
 import * as firebase from 'firebase';
 
 firebase.initializeApp({
-  apiKey: 'AIzaSyC08s1yltkISE8Ufp370xpYryIqs8iQNFI',
-  authDomain: 'firecommerce-eb006.firebaseapp.com',
-  databaseURL: 'https://firecommerce-eb006.firebaseio.com',
-  projectId: 'firecommerce-eb006',
-  storageBucket: 'firecommerce-eb006.appspot.com',
-  messagingSenderId: '964690566255'
+  apiKey: 'x',
+  authDomain: 'x',
+  databaseURL: 'x',
+  projectId: 'x',
+  storageBucket: 'x',
+  messagingSenderId: 'x'
 });
 
 @NgModule({
