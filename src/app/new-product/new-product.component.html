@@ -5,18 +5,25 @@
       <mat-card-content class="text-center">
         <h1>Nuevo Producto</h1>
         <mat-form-field>
-          <input matInput placeholder="Nombre del producto">
+          <input [(ngModel)]="name" matInput placeholder="Nombre del producto">
         </mat-form-field>
         <mat-form-field>
-          <input matInput placeholder="Precio del producto">
+          <input [(ngModel)]="price" matInput placeholder="Precio del producto">
         </mat-form-field>
         <mat-form-field>
-          <textarea matInput placeholder="Descripción del producto"></textarea>
+          <textarea [(ngModel)]="description" matInput placeholder="Descripción del producto"></textarea>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-select [(ngModel)]="category">
+            <mat-option value="tech" selected>Tecnologia</mat-option>
+            <mat-option value="clothe">Ropa</mat-option>
+            <mat-option value="other">Otro</mat-option>
+          </mat-select>
         </mat-form-field>
         <p>Sube una foto del producto:</p>
         <input type="file">
         <br><br>
-        <button mat-raised-button color="primary">Publicar</button>
+        <button mat-raised-button color="primary" (click)="publish()">Publicar</button>
       </mat-card-content>
     </mat-card>
   </mat-grid-tile>

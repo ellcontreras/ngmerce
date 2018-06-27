@@ -8,11 +8,12 @@ import { NavbarComponentComponent } from './navbar-component/navbar-component.co
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule,
           MatIconModule, MatListModule, MatCardModule, MatGridListModule,
-          MatFormFieldModule, MatInputModule } from '@angular/material';
+          MatFormFieldModule, MatInputModule, MatSelectModule } from '@angular/material';
 import { HomePageComponent } from './home-page/home-page.component';
 import { ProductCardComponent } from './product-card/product-card.component';
 import { CategoryPageComponent } from './category-page/category-page.component';
 import { NewProductComponent } from './new-product/new-product.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { NewProductComponent } from './new-product/new-product.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule,
     LayoutModule,
     MatToolbarModule,
     MatButtonModule,
@@ -36,7 +38,8 @@ import { NewProductComponent } from './new-product/new-product.component';
     MatCardModule,
     MatGridListModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
