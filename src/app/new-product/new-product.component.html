@@ -21,7 +21,7 @@
           </mat-select>
         </mat-form-field>
         <p>Sube una foto del producto:</p>
-        <input type="file">
+        <input type="file" (change)="imageChange($event)">
         <br><br>
         <button mat-raised-button color="primary" (click)="publish()">Publicar</button>
       </mat-card-content>

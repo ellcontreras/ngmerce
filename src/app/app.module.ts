@@ -14,6 +14,16 @@ import { ProductCardComponent } from './product-card/product-card.component';
 import { CategoryPageComponent } from './category-page/category-page.component';
 import { NewProductComponent } from './new-product/new-product.component';
 import {FormsModule} from '@angular/forms';
+import * as firebase from 'firebase';
+
+firebase.initializeApp({
+  apiKey: 'AIzaSyC08s1yltkISE8Ufp370xpYryIqs8iQNFI',
+  authDomain: 'firecommerce-eb006.firebaseapp.com',
+  databaseURL: 'https://firecommerce-eb006.firebaseio.com',
+  projectId: 'firecommerce-eb006',
+  storageBucket: 'firecommerce-eb006.appspot.com',
+  messagingSenderId: '964690566255'
+});
 
 @NgModule({
   declarations: [
